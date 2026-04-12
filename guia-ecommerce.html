@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía e‑commerce en 2026: cómo montar una tienda online de forma realista</title>
+    <meta name="description" content="Guía completa de e‑commerce en 2026: modelos de tienda, qué vender, cómo elegir proveedores, qué costes considerar y qué errores evitar si empiezas desde cero.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #050505;
+            --text-color: #e0e0e0;
+            --accent: #00f3ff;
+            --font-heading: 'Poppins', sans-serif;
+            --font-body: 'Montserrat', sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-body);
+            background: linear-gradient(135deg, #0a0f16 0%, var(--bg-color) 100%);
+            color: var(--text-color);
+            line-height: 1.7;
+            padding: 80px 5% 50px;
+        }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        header {
+            max-width: 960px;
+            margin: 0 auto 30px;
+        }
+        h1, h2, h3 { font-family: var(--font-heading); color: #fff; }
+        h1 {
+            font-size: clamp(2rem, 5.5vw, 2.7rem);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        h2 {
+            font-size: clamp(1.4rem, 3.5vw, 2rem);
+            margin: 32px 0 12px;
+        }
+        h3 {
+            font-size: 1.15rem;
+            margin: 22px 0 8px;
+        }
+        p { margin-bottom: 14px; font-size: 1rem; color: #d0d0d0; }
+        .small-text { font-size: 0.9rem; color: #999; }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+        }
+
+        main {
+            max-width: 960px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.02);
+            border-radius: 18px;
+            border: 1px solid #1a1a1a;
+            padding: 22px 18px 26px;
+        }
+
+        .callout {
+            border-left: 3px solid var(--accent);
+            background: #050607;
+            padding: 12px 14px;
+            border-radius: 10px;
+            margin: 16px 0 18px;
+            font-size: 0.95rem;
+        }
+
+        .list { margin-left: 18px; margin-bottom: 12px; }
+        .list li { margin-bottom: 8px; }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin: 12px 0 18px;
+        }
+        @media (min-width: 768px) {
+            .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        }
+        .card {
+            background: #090909;
+            border-radius: 12px;
+            border: 1px solid #1a1a1a;
+            padding: 14px 14px 16px;
+            font-size: 0.95rem;
+        }
+        .card h3 { margin-top: 0; }
+
+        .steps { margin-left: 18px; margin-bottom: 14px; }
+        .steps li { margin-bottom: 10px; }
+
+        table { width: 100%; border-collapse: collapse; margin: 10px 0 16px; background: #0a0a0a; }
+        th, td { padding: 10px; border: 1px solid #1a1a1a; font-size: 0.95rem; }
+        th { background: #111; }
+
+        footer {
+            max-width: 960px;
+            margin: 24px auto 0;
+            font-size: 0.8rem;
+            color: #777;
+        }
+        footer a { margin-right: 10px; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-link">← Volver a la página principal</a>
+        <h1>Guía e‑commerce en 2026</h1>
+        <p>
+            Montar una tienda online sigue siendo una de las formas más conocidas de intentar generar ingresos
+            en internet. Sin embargo, la competencia es alta y los márgenes no siempre son tan atractivos como
+            parecen en los anuncios.
+        </p>
+        <p class="small-text">
+            Esta guía no es una promesa de resultados, sino un resumen de aspectos clave que conviene entender
+            antes de invertir tiempo y dinero en un proyecto de e‑commerce.
+        </p>
+    </header>
+
+    <main>
+        <section id="modelos">
+            <h2>1. Modelos de e‑commerce más habituales</h2>
+            <p>
+                No todos los e‑commerce funcionan igual. Entender el modelo que eliges te ayudará a ajustar expectativas
+                y a calcular mejor costes y riesgos.
+            </p>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Inventario propio</h3>
+                    <p>
+                        Compras producto por adelantado, lo almacenas y lo envías tú o un operador logístico.
+                        Sueles tener más control sobre stock y calidad, pero también mayor riesgo si no vendes.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Dropshipping</h3>
+                    <p>
+                        No tienes stock propio. Cuando alguien compra, el proveedor envía el producto.
+                        Reduce inversión inicial, pero dependes mucho de los tiempos de envío y del proveedor.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Print‑on‑demand</h3>
+                    <p>
+                        Productos personalizados (camisetas, tazas, láminas, etc.) que se fabrican bajo demanda.
+                        Encaja bien con proyectos creativos, pero hay que vigilar precios y calidad.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Productos digitales</h3>
+                    <p>
+                        Cursos, plantillas, recursos digitales o software. No hay logística física, pero sí
+                        mucha competencia y necesidad de aportar valor real.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="que-vender">
+            <h2>2. Cómo pensar qué vender (más allá de copiar tendencias)</h2>
+            <p>
+                La idea de “producto ganador” puede servir de inspiración, pero no basta con copiar lo que ya
+                está saturado. Algunas preguntas útiles:
+            </p>
+            <ul class="list">
+                <li>¿Qué problema concreto resuelve el producto?</li>
+                <li>¿Quién tiene ese problema y cómo habla de él?</li>
+                <li>¿Hay ya muchas tiendas ofreciendo exactamente lo mismo?</li>
+                <li>¿Puedes aportar algo distinto (packaging, contenido, soporte, garantía, especialización)?</li>
+            </ul>
+            <p>
+                La IA puede ayudarte a analizar reseñas, agrupar opiniones y detectar preocupaciones frecuentes
+                de los clientes, pero la decisión final sobre qué vender requiere criterio humano.
+            </p>
+        </section>
+
+        <section id="costes">
+            <h2>3. Costes típicos de montar una tienda online</h2>
+            <p>
+                Uno de los errores más comunes es fijarse solo en el coste del producto. En realidad, hay varios
+                bloques a considerar:
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Concepto</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Plataforma</td>
+                        <td>Cuota mensual de la plataforma (o costes de hosting/tema si usas CMS).</td>
+                    </tr>
+                    <tr>
+                        <td>Producto</td>
+                        <td>Precio de compra o coste de fabricación, incluyendo packaging.</td>
+                    </tr>
+                    <tr>
+                        <td>Envío y logística</td>
+                        <td>Coste de transporte, devoluciones, almacén o fulfillment.</td>
+                    </tr>
+                    <tr>
+                        <td>Marketing</td>
+                        <td>Publicidad pagada, herramientas de email, creación de contenido.</td>
+                    </tr>
+                    <tr>
+                        <td>Comisiones</td>
+                        <td>Pasarelas de pago, plataformas externas, marketplaces, etc.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="small-text">
+                Tener una hoja de cálculo con todos estos conceptos ayuda a evitar sorpresas
+                y a ver si el margen que queda después de gastos tiene sentido.
+            </p>
+        </section>
+
+        <section id="ia">
+            <h2>4. Cómo puede ayudarte la IA en e‑commerce</h2>
+            <p>
+                La IA no convierte un mal producto en uno bueno, pero sí puede facilitar muchas tareas
+                relacionadas con la gestión de una tienda:
+            </p>
+            <ul class="list">
+                <li>Redacción de fichas de producto más claras y consistentes.</li>
+                <li>Generación de ideas para fotos, vídeos y campañas.</li>
+                <li>Creación de plantillas de respuesta para dudas frecuentes.</li>
+                <li>Resumen de reseñas para detectar patrones de satisfacción o queja.</li>
+                <li>Apoyo en traducciones iniciales (siempre revisadas por una persona).</li>
+            </ul>
+            <div class="callout">
+                Lo recomendable es usar la IA como asistente y mantener el control humano sobre
+                decisiones que afecten a la experiencia del cliente y a la reputación de la marca.
+            </div>
+        </section>
+
+        <section id="pasos">
+            <h2>5. Pasos básicos para lanzar una tienda de prueba</h2>
+            <ol class="steps">
+                <li><strong>Elegir un nicho y modelo.</strong> Por ejemplo, productos físicos de bajo volumen con envío nacional.</li>
+                <li><strong>Seleccionar plataforma.</strong> Shopify, WooCommerce u otras, según tu nivel técnico.</li>
+                <li><strong>Configurar lo mínimo.</strong> Dominio, diseño sencillo, estructura de categorías, páginas legales.</li>
+                <li><strong>Subir pocos productos.</strong> Mejor empezar con una selección pequeña bien trabajada.</li>
+                <li><strong>Definir una estrategia de tráfico.</strong> Contenido orgánico, colaboración con creadores o pequeñas campañas.</li>
+                <li><strong>Medir y ajustar.</strong> Revisar qué productos generan más interés, dónde se caen los usuarios, etc.</li>
+            </ol>
+        </section>
+
+        <section id="errores">
+            <h2>6. Errores frecuentes al empezar en e‑commerce</h2>
+            <ul class="list">
+                <li>Elegir productos solo por moda, sin pensar en márgenes ni saturación.</li>
+                <li>No calcular correctamente todos los costes antes de fijar precios.</li>
+                <li>Descuidar la atención al cliente y la postventa.</li>
+                <li>Depender exclusivamente de anuncios pagados sin probar otros canales.</li>
+                <li>No revisar tiempos de envío reales ni políticas de devolución de los proveedores.</li>
+            </ul>
+        </section>
+
+        <section id="faq">
+            <h2>7. Preguntas frecuentes</h2>
+
+            <h3>¿Es obligatorio empezar con dropshipping?</h3>
+            <p>
+                No. Es una opción más, útil si quieres validar ideas sin invertir en stock,
+                pero también tiene limitaciones en tiempos de entrega y control de calidad.
+            </p>
+
+            <h3>¿Con cuánto dinero se puede empezar?</h3>
+            <p>
+                Depende del modelo y del país. Lo importante es entender bien en qué se va a ir ese dinero
+                y asumir que al principio estás pagando por aprender y validar, no por beneficios inmediatos.
+            </p>
+
+            <h3>¿Este contenido es asesoramiento financiero?</h3>
+            <p>
+                No. Todo lo que se expone aquí tiene fines informativos y educativos.
+                No es una recomendación de inversión ni una garantía de ingresos.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <a href="index.html">Inicio</a>
+            <a href="recursos.html">Recursos</a>
+            <a href="privacidad.html">Privacidad</a>
+            <a href="cookies.html">Cookies</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+        <p>
+            Antes de poner en marcha un proyecto de e‑commerce, revisa siempre la normativa aplicable,
+            las obligaciones fiscales de tu país y, si lo necesitas, consulta con profesionales.
+        </p>
+    </footer>
+</body>
+</html>
