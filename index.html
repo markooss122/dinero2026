@@ -8,7 +8,7 @@
     <meta name="keywords" content="ganar dinero online 2026, ideas de negocio digital, ingresos online, inteligencia artificial, e‑commerce, freelance">
     <meta name="p:domain_verify" content="7d8155877a6b69bcbc83481ee46650ef"/>
 
-    <!-- IMPORTANTE: deja solo el script de AdSense, pero evita mostrar anuncios hasta que te aprueben -->
+    <!-- Script de AdSense (sin mostrar anuncios hasta aprobación) -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2587597281292784" crossorigin="anonymous"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@700;900&display=swap" rel="stylesheet">
@@ -26,12 +26,11 @@
         * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
         body { font-family: var(--font-body); background: linear-gradient(135deg, #0a0f16 0%, var(--bg-color) 100%); color: var(--text-color); line-height: 1.7; overflow-x: hidden; padding-top: 80px; }
 
-        h1, h2, h3 { font-family: var(--font-heading); color: #fff; text-transform: uppercase; }
-        h1 { font-size: clamp(2.1rem, 7vw, 3.4rem); text-shadow: 0 0 15px var(--neon-blue-glow); margin-bottom: 20px; line-height: 1.15; font-weight: 900; }
-        h2 { font-size: clamp(1.5rem, 4.5vw, 2.1rem); margin: 40px 0 20px; border-bottom: 3px solid var(--neon-blue); padding-bottom: 12px; display: inline-block; letter-spacing: .5px; }
-        h3 { font-size: 1.35rem; margin: 30px 0 15px; color: var(--neon-blue); text-transform: none; }
-        p { margin-bottom: 18px; font-size: 1rem; color: #ccc; }
-        .highlight { color: var(--neon-blue); font-weight: 600; text-shadow: 0 0 10px var(--neon-blue-glow); }
+        h1, h2, h3 { font-family: var(--font-heading); color: #fff; }
+        h1 { font-size: clamp(2.1rem, 7vw, 3.4rem); text-shadow: 0 0 15px var(--neon-blue-glow); margin-bottom: 20px; line-height: 1.15; font-weight: 900; text-transform: uppercase; }
+        h2 { font-size: clamp(1.5rem, 4.5vw, 2.1rem); margin: 40px 0 20px; border-bottom: 3px solid var(--neon-blue); padding-bottom: 12px; display: inline-block; letter-spacing: .5px; text-transform: uppercase; }
+        h3 { font-size: 1.25rem; margin: 16px 0 8px; }
+        p { margin-bottom: 16px; font-size: 1rem; color: #ccc; }
         .small-text { font-size: 0.9rem; color: #999; }
 
         nav { position: fixed; top: 0; width: 100%; background: rgba(5, 5, 5, 0.95); backdrop-filter: blur(10px); z-index: 1000; padding: 15px 5%; border-bottom: 1px solid #222; display: flex; justify-content: space-between; align-items: center; }
@@ -49,37 +48,56 @@
         .hero-subtitle { font-size: clamp(1rem, 3.5vw, 1.3rem); margin-bottom: 22px; color: #f4f4f4; font-weight: 400; }
         .hero-note { font-size: 0.9rem; color: #aaaaaa; max-width: 70ch; margin: 0 auto; }
 
-        .container { max-width: 1300px; margin: 0 auto; padding: 0 5%; display: grid; grid-template-columns: 1fr; gap: 30px; }
-        @media(min-width: 992px) { 
-            .container { grid-template-columns: 3fr 1fr; gap: 45px; } 
-            .logo { font-size: 1.8rem; }
-            .nav-links a { font-size: 1rem; }
-            .hero { min-height: 85vh; background-attachment: fixed; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 5% 40px; }
+
+        .intro-block { background: rgba(255,255,255,0.02); border-radius: 18px; border: 1px solid #1a1a1a; padding: 22px 18px 26px; margin-bottom: 30px; }
+
+        .grid-guides {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        @media(min-width: 900px) {
+            .grid-guides { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+        }
+        .guide-card {
+            background: #0a0a0a;
+            border-radius: 18px;
+            border: 1px solid #1a1a1a;
+            padding: 18px 16px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .guide-tag {
+            display: inline-block;
+            font-size: 0.8rem;
+            color: #aaa;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+        }
+        .guide-title {
+            font-family: var(--font-heading);
+            font-size: 1.05rem;
+            margin-bottom: 8px;
+        }
+        .guide-desc {
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+        }
+        .guide-link {
+            font-size: 0.9rem;
+            color: var(--neon-blue);
+            text-decoration: none;
+            margin-top: auto;
         }
 
-        main { background: rgba(255,255,255,0.02); padding: clamp(20px, 4vw, 36px); border-radius: 20px; border: 1px solid #1a1a1a; }
-
-        .table-responsive { overflow-x: auto; margin: 25px 0; border-radius: 12px; border: 1px solid #222; -webkit-overflow-scrolling: touch; }
+        .table-responsive { overflow-x: auto; margin: 25px 0; border-radius: 12px; border: 1px solid #1a1a1a; -webkit-overflow-scrolling: touch; }
         table { width: 100%; border-collapse: collapse; background: #0a0a0a; min-width: 520px; }
-        th, td { padding: 14px; text-align: left; border-bottom: 1px solid #1a1a1a; font-size: 0.95rem; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #1a1a1a; font-size: 0.95rem; }
         th { background: #111; color: var(--neon-blue); font-family: var(--font-heading); text-transform: uppercase; }
 
-        .content-img { width: 100%; height: auto; border-radius: 15px; margin: 16px 0 20px; border: 2px solid #222; display: block; }
-
-        /* Quitamos anuncios visibles hasta aprobación AdSense */
-        .ad-slot { display: none; }
-
-        .sidebar-content { background: #0a0a0a; padding: 22px; border-radius: 15px; border: 1px solid #1a1a1a; }
-        .sidebar-list { list-style: none; margin-top: 10px; }
-        .sidebar-list li { margin-bottom: 10px; font-size: 0.95rem; }
-        .sidebar-list a { color: var(--neon-blue); text-decoration: none; }
-
-        .testimonials { background: #080808; padding: 50px 5%; text-align: center; border-top: 1px solid #1a1a1a; border-bottom: 1px solid #1a1a1a; margin-top: 40px; }
-        .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px; max-width: 1100px; margin: 30px auto 0; }
-        .testimonial-card { background: #111; padding: 22px; border-radius: 15px; border: 1px solid #222; }
-        .user-img { width: 64px; height: 64px; border-radius: 50%; border: 3px solid var(--neon-blue); margin-bottom: 12px; }
-
-        .faq { padding: 50px 5%; max-width: 900px; margin: 0 auto; }
+        .faq { max-width: 900px; margin: 10px auto 0; }
         .faq-item { background: #111; margin-bottom: 10px; border-radius: 10px; border: 1px solid #222; cursor: pointer; }
         .faq-question { padding: 18px 20px; font-weight: 700; color: #fff; display: flex; justify-content: space-between; align-items: center; font-size: 1rem; }
         .faq-answer { padding: 0 20px; max-height: 0; overflow: hidden; transition: all 0.25s ease-out; color: #aaa; font-size: 0.95rem; }
@@ -104,8 +122,8 @@
     <nav>
         <a href="index.html" class="logo">MONEYHACK<span style="color:#fff;">2026</span></a>
         <div class="nav-links">
-            <a href="#metodos">Métodos</a>
-            <a href="#casos">Casos</a>
+            <a href="#guias">Guías</a>
+            <a href="#resumen-metodos">Modelos</a>
             <a href="#faq">Preguntas</a>
             <a href="contacto.html">Soporte</a>
         </div>
@@ -113,200 +131,153 @@
 
     <section class="hero">
         <div class="hero-content reveal active">
-            <h1>Ganar dinero online en 2026 de forma realista</h1>
+            <h1>Ganar dinero online en 2026 sin humo</h1>
             <p class="hero-subtitle">
-                Esta guía recoge las principales formas de generar ingresos online en 2026 (e‑commerce, contenido, freelance e IA)
-                explicadas paso a paso, con riesgos, esfuerzo necesario y ejemplos orientativos.
+                En esta web encontrarás guías extensas sobre diferentes formas de generar ingresos online en 2026:
+                e‑commerce, servicios freelance apoyados en IA y creación de contenido.
             </p>
             <p class="hero-note">
-                Nada de fórmulas mágicas: los resultados dependen de tu dedicación, habilidades, contexto y de factores que nadie controla.
-                Este contenido es educativo, no una promesa de ingresos.
+                No hay fórmulas mágicas ni cantidades garantizadas. El objetivo es entender mejor las opciones,
+                los riesgos y el trabajo real que hay detrás de cada modelo.
             </p>
-            <a href="#contenido" class="cta-btn">Ver las estrategias explicadas</a>
+            <a href="#guias" class="cta-btn">Ver guías paso a paso</a>
         </div>
     </section>
 
-    <div class="container" id="contenido">
-        <main>
-            <section class="reveal">
-                <h2>Antes de empezar: aviso importante</h2>
-                <p>
-                    Ganar dinero en internet en 2026 es posible, pero requiere trabajo constante, capacidad de aprender
-                    rápido y tolerar la incertidumbre. No todos los modelos sirven para todas las personas y ninguno
-                    garantiza una cantidad concreta al mes.
-                </p>
-                <p>
-                    En esta página no vas a encontrar promesas de “hacerte rico en 90 días”, sino una visión honesta
-                    de qué está funcionando hoy, qué habilidades necesitas desarrollar y qué errores evitar.
-                    El objetivo es que puedas tomar mejores decisiones, no venderte una ilusión.
-                </p>
+    <div class="container">
+        <section class="intro-block reveal">
+            <h2>Antes de empezar: aviso importante</h2>
+            <p>
+                Internet está lleno de mensajes que prometen resultados rápidos y cifras espectaculares.
+                Aquí el enfoque es diferente: analizar qué modelos existen, qué esfuerzo exigen y en qué casos
+                pueden encajar mejor, sin prometer que vayas a conseguir una cifra concreta al mes.
+            </p>
+            <p>
+                Las guías de esta web tienen un propósito informativo y educativo. Antes de tomar decisiones
+                económicas importantes, es recomendable contrastar la información y, si lo necesitas, consultar
+                con profesionales (financieros, fiscales, legales, etc.).
+            </p>
+        </section>
 
-                <h3>Resumen de modelos que se analizan</h3>
-                <div class="table-responsive">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Método</th>
-                                <th>Inversión aproximada</th>
-                                <th>Tipo de ingreso</th>
-                                <th>Curva de aprendizaje</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>E‑commerce / Dropshipping de nicho</td>
-                                <td>Desde 50‑100 €</td>
-                                <td>Variable según ventas</td>
-                                <td>Media</td>
-                            </tr>
-                            <tr>
-                                <td>Contenido y TikTok Shop</td>
-                                <td>Baja (tiempo + móvil)</td>
-                                <td>Comisiones y ventas</td>
-                                <td>Media</td>
-                            </tr>
-                            <tr>
-                                <td>Servicios freelance apoyados en IA</td>
-                                <td>Muy baja</td>
-                                <td>Honorarios por proyecto</td>
-                                <td>Baja‑media</td>
-                            </tr>
-                            <tr>
-                                <td>Automatización y consultoría con IA</td>
-                                <td>Algo mayor (herramientas y formación)</td>
-                                <td>Proyectos y clientes recurrentes</td>
-                                <td>Alta</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <p class="small-text">
-                    Las cifras de inversión y dificultad son orientativas y pueden variar según el país, la experiencia previa
-                    y el sector en el que quieras trabajar.
-                </p>
-            </section>
+        <section id="guias" class="reveal">
+            <h2>Guías principales de la web</h2>
+            <p>
+                Estas son las guías que desarrollan en profundidad los temas centrales del sitio.
+                Puedes leerlas en el orden que quieras según lo que más te interese.
+            </p>
 
-            <section id="metodos">
-                <div class="reveal">
-                    <h2>1. E‑commerce y dropshipping de productos de calidad</h2>
-                    <p>
-                        El viejo modelo de vender productos de baja calidad y envío eterno está prácticamente agotado.
-                        Lo que está funcionando mejor en 2026 es centrarse en productos bien seleccionados, con proveedores
-                        fiables y tiempos de entrega razonables. La IA ayuda a investigar tendencias, redactar fichas
-                        de producto y optimizar campañas, pero no sustituye el trabajo de elegir el nicho.
+            <div class="grid-guides">
+                <article class="guide-card">
+                    <span class="guide-tag">Servicios · Inteligencia artificial</span>
+                    <h3 class="guide-title">Freelance con IA en 2026</h3>
+                    <p class="guide-desc">
+                        Cómo ofrecer servicios reales (redacción, diseño simple, automatización básica)
+                        apoyándote en herramientas de IA, sin engañar a tus clientes ni depender de promesas irreales.
                     </p>
-                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200" alt="Panel de control de comercio electrónico" class="content-img" loading="lazy">
-                    <p>
-                        Si te interesa este modelo, una ruta habitual es: elegir un nicho concreto, validar la demanda,
-                        montar una tienda en una plataforma conocida y probar productos con pequeños presupuestos de publicidad
-                        o contenido orgánico. En la guía detallada explico ejemplos, costes típicos y errores comunes.
-                    </p>
-                    <a href="dropshipping2026.html" class="cta-btn" style="font-size:0.95rem; padding: 10px 22px;">Ver guía completa de e‑commerce</a>
-                </div>
+                    <a class="guide-link" href="guia-freelance-ia.html">Leer la guía de freelance con IA →</a>
+                </article>
 
-                <div class="reveal">
-                    <h2>2. Contenido corto y TikTok Shop</h2>
-                    <p>
-                        El contenido en vídeo corto sigue siendo uno de los motores de atención más fuertes.
-                        Crear contenido útil, entretenido o aspiracional alrededor de productos físicos o digitales
-                        puede derivar en comisiones, ventas o colaboraciones. No es necesario mostrar la cara si no quieres,
-                        pero sí aportar valor real a la audiencia.
+                <article class="guide-card">
+                    <span class="guide-tag">Contenido · Plataformas</span>
+                    <h3 class="guide-title">TikTok Shop y contenido corto</h3>
+                    <p class="guide-desc">
+                        Qué es TikTok Shop, cómo encaja con la creación de contenido, qué formas de monetizar existen
+                        y cuáles son los riesgos de depender de una sola plataforma.
                     </p>
-                    <p>
-                        Aquí la clave no es “viralizar un vídeo y ya”, sino construir un sistema: entender qué tipo de contenido
-                        resuena con tu público, publicar de forma constante y aprender a leer las métricas para mejorar.
-                        La IA puede ayudarte a generar ideas, guiones y variaciones, pero la estrategia sigue siendo humana.
-                    </p>
-                </div>
+                    <a class="guide-link" href="guia-tiktok-shop.html">Leer la guía de TikTok Shop →</a>
+                </article>
 
-                <div class="reveal">
-                    <h2>3. Freelance apoyado en herramientas de IA</h2>
-                    <p>
-                        Muchas empresas necesitan ayuda con tareas de escritura, diseño, análisis o soporte, y valoran trabajar
-                        con personas que sepan usar bien las herramientas de IA para ser más ágiles. Ofrecer servicios de
-                        copywriting, diseño básico, automatización sencilla o creación de contenidos es una forma flexible de
-                        empezar a facturar online.
+                <article class="guide-card">
+                    <span class="guide-tag">E‑commerce · Negocios online</span>
+                    <h3 class="guide-title">E‑commerce en 2026</h3>
+                    <p class="guide-desc">
+                        Diferencias entre tienda con stock propio, dropshipping y productos digitales,
+                        qué costes debes tener en cuenta y qué errores suelen arruinar un proyecto de tienda online.
                     </p>
-                    <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=1200" alt="Profesional freelance trabajando con herramientas digitales" class="content-img" loading="lazy">
-                    <p>
-                        El enfoque recomendado es empezar con un servicio muy concreto, construir algunos ejemplos o proyectos
-                        propios como portfolio y luego abrir perfiles en plataformas freelance o contactar con potenciales
-                        clientes de manera directa. En la guía específica sobre freelance con IA desarrollo pasos, ejemplos
-                        de ofertas y formas de fijar precios.
-                    </p>
-                </div>
-            </section>
-        </main>
-
-        <aside class="reveal">
-            <div class="sidebar-content">
-                <h3>Qué encontrarás en este sitio</h3>
-                <p>
-                    Esta web recoge guías largas, recursos y ejemplos prácticos para entender mejor
-                    diferentes formas de generar ingresos online en 2026.
-                </p>
-                <ul class="sidebar-list">
-                    <li><a href="dropshipping2026.html">Guía detallada de e‑commerce y dropshipping</a></li>
-                    <li><a href="recursos.html">Herramientas y recursos recomendados</a></li>
-                    <li><a href="contacto.html">Contacto y soporte</a></li>
-                </ul>
-                <p class="small-text">
-                    Toda la información tiene fines educativos e informativos. No es asesoramiento financiero
-                    ni garantía de resultados.
-                </p>
+                    <a class="guide-link" href="guia-ecommerce.html">Leer la guía de e‑commerce →</a>
+                </article>
             </div>
-        </aside>
+
+            <p class="small-text" style="margin-top:18px;">
+                Además de estas guías, puedes visitar la página de recursos para ver herramientas y servicios
+                que pueden ayudarte a construir tus proyectos:
+                <a href="recursos.html">ver recursos recomendados</a>.
+            </p>
+        </section>
+
+        <section id="resumen-metodos" class="reveal">
+            <h2>Resumen general de modelos</h2>
+            <p>
+                A modo de vista rápida, este cuadro resume algunos modelos que se explican con más detalle en las guías:
+            </p>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Modelo</th>
+                            <th>Tipo</th>
+                            <th>Inversión aproximada</th>
+                            <th>Curva de aprendizaje</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Servicios freelance con IA</td>
+                            <td>Servicios</td>
+                            <td>Baja</td>
+                            <td>Baja‑media</td>
+                        </tr>
+                        <tr>
+                            <td>TikTok Shop / contenido</td>
+                            <td>Contenido + producto</td>
+                            <td>Baja‑media</td>
+                            <td>Media</td>
+                        </tr>
+                        <tr>
+                            <td>Tienda online de nicho</td>
+                            <td>E‑commerce</td>
+                            <td>Media (producto + herramientas)</td>
+                            <td>Media‑alta</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="small-text">
+                Estas etiquetas son orientativas. No sustituyen un análisis detallado de tu situación personal,
+                tu país, tu experiencia y el tiempo que puedes dedicar.
+            </p>
+        </section>
+
+        <section id="faq" class="reveal faq">
+            <h2>Preguntas frecuentes sobre el sitio</h2>
+
+            <div class="faq-item active">
+                <div class="faq-question">¿Este sitio promete que voy a ganar una cantidad concreta al mes?</div>
+                <div class="faq-answer">
+                    No. El objetivo es explicar modelos, procesos, riesgos y conceptos para que puedas tomar
+                    mejores decisiones. Los resultados reales dependen de muchos factores fuera del control
+                    de esta web.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Puedo aplicar lo que leo aquí si nunca he emprendido?</div>
+                <div class="faq-answer">
+                    Sí, pero conviene ir paso a paso. Las guías están pensadas para ofrecer contexto y ejemplos,
+                    no para sustituir toda la experimentación que necesita cualquier proyecto real.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Es asesoramiento financiero, legal o fiscal?</div>
+                <div class="faq-answer">
+                    No. Todo el contenido es informativo y educativo. Si estás pensando en invertir dinero,
+                    abrir una empresa o cambiar tu situación laboral, es recomendable que hables con profesionales
+                    cualificados en tu país.
+                </div>
+            </div>
+        </section>
     </div>
-
-    <section class="testimonials reveal" id="casos">
-        <h1>Ejemplos y experiencias</h1>
-        <p class="small-text">
-            Los siguientes casos son ejemplos inspirados en situaciones reales, pensados para ilustrar posibilidades.
-            No representan promesas ni resultados típicos.
-        </p>
-        <div class="testimonial-grid">
-            <div class="testimonial-card">
-                <img src="https://i.pravatar.cc/150?u=laura" class="user-img" alt="Usuario ejemplo 1">
-                <p>"Comencé ofreciendo pequeños servicios de edición de vídeo para creadores y, combinando IA con mi criterio, logré mis primeros clientes online."</p>
-                <h4>— Caso 1</h4>
-            </div>
-            <div class="testimonial-card">
-                <img src="https://i.pravatar.cc/150?u=carlos" class="user-img" alt="Usuario ejemplo 2">
-                <p>"Lanzar una tienda online de nicho me ayudó a entender mejor el marketing digital, aunque me llevó varios meses ver resultados consistentes."</p>
-                <h4>— Caso 2</h4>
-            </div>
-            <div class="testimonial-card">
-                <img src="https://i.pravatar.cc/150?u=sofia" class="user-img" alt="Usuario ejemplo 3">
-                <p>"Crear contenido sobre un tema que domino me permitió construir una comunidad pequeña pero fiel, de la que luego salieron colaboraciones."</p>
-                <h4>— Caso 3</h4>
-            </div>
-        </div>
-    </section>
-
-    <section class="faq reveal" id="faq">
-        <h1>Preguntas frecuentes</h1>
-        <div class="faq-item active">
-            <div class="faq-question">¿Puedo empezar si no tengo capital?</div>
-            <div class="faq-answer">
-                Hay modelos que requieren muy poca inversión económica (por ejemplo, servicios freelance
-                o creación de contenido). Aun así, necesitarás dedicar tiempo y tomártelo como un proyecto serio.
-            </div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question">¿Cuánto tiempo se tarda en ver resultados?</div>
-            <div class="faq-answer">
-                Depende del modelo y de tu punto de partida. Algunos proyectos pueden tardar meses en consolidarse.
-                Es importante no tomar decisiones solo por promesas de resultados rápidos.
-            </div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question">¿Es esto asesoramiento financiero o de inversión?</div>
-            <div class="faq-answer">
-                No. Todo el contenido de esta web es informativo y educativo. No sustituye el consejo
-                de un profesional financiero, fiscal o legal.
-            </div>
-        </div>
-    </section>
 
     <footer>
         <a href="index.html" class="footer-logo">MONEYHACK2026</a>
@@ -318,9 +289,8 @@
             <a href="contacto.html">Contacto</a>
         </div>
         <div class="disclaimer">
-            Este sitio tiene fines exclusivamente informativos y educativos. No garantiza resultados ni niveles
-            de ingresos concretos. Cada proyecto conlleva riesgos y es responsabilidad del lector evaluar
-            su propia situación antes de tomar decisiones.
+            Este sitio tiene fines informativos y educativos. No garantiza resultados ni niveles de ingresos.
+            Cada proyecto implica riesgos y responsabilidades que debes evaluar según tu situación.
         </div>
     </footer>
 
@@ -348,7 +318,7 @@
             });
         });
 
-        // NO empujamos anuncios mientras el sitio no esté aprobado
+        // NO se empujan anuncios hasta que AdSense apruebe el sitio
         // (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </body>
